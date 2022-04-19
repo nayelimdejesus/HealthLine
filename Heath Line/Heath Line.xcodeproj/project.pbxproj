@@ -16,6 +16,7 @@
 		5DD50EA428056B9C007FEFF1 /* Heath_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EA328056B9C007FEFF1 /* Heath_LineTests.swift */; };
 		5DD50EAE28056B9C007FEFF1 /* Heath_LineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EAD28056B9C007FEFF1 /* Heath_LineUITests.swift */; };
 		5DD50EB028056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EAF28056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift */; };
+		C536F57F280E75D500CCFD12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536F57E280E75D500CCFD12 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5DD50EA928056B9C007FEFF1 /* Heath LineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heath LineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD50EAD28056B9C007FEFF1 /* Heath_LineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heath_LineUITests.swift; sourceTree = "<group>"; };
 		5DD50EAF28056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heath_LineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C536F57E280E75D500CCFD12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5DD50E9528056B9C007FEFF1 /* Assets.xcassets */,
 				5DD50E9728056B9C007FEFF1 /* LaunchScreen.storyboard */,
 				5DD50E9A28056B9C007FEFF1 /* Info.plist */,
+				C536F57E280E75D500CCFD12 /* HomeViewController.swift */,
 			);
 			path = "Heath Line";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				5DD50E9128056B9C007FEFF1 /* ViewController.swift in Sources */,
 				5DD50E8D28056B9C007FEFF1 /* AppDelegate.swift in Sources */,
 				5DD50E8F28056B9C007FEFF1 /* SceneDelegate.swift in Sources */,
+				C536F57F280E75D500CCFD12 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
