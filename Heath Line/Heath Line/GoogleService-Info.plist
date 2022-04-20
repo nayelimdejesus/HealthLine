@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>48885793923-v019kmsb3flbcsm6vl08j59t2gg3qtaj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.48885793923-v019kmsb3flbcsm6vl08j59t2gg3qtaj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDiOiefKhDf99vdCLT1IAbldVvZapV-xkQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>48885793923</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>memo.com.Heath-Line</string>
+	<key>PROJECT_ID</key>
+	<string>healthline-2022</string>
+	<key>STORAGE_BUCKET</key>
+	<string>healthline-2022.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:48885793923:ios:4d47fd10c15a338a4f47b6</string>
+</dict>
+</plist>

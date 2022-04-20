@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-
+    var email:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
