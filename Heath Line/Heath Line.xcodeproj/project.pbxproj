@@ -19,6 +19,7 @@
 		5DD50EA428056B9C007FEFF1 /* Heath_LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EA328056B9C007FEFF1 /* Heath_LineTests.swift */; };
 		5DD50EAE28056B9C007FEFF1 /* Heath_LineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EAD28056B9C007FEFF1 /* Heath_LineUITests.swift */; };
 		5DD50EB028056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD50EAF28056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift */; };
+		5DEE297B2818890500CD57BB /* TalkToDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE297A2818890500CD57BB /* TalkToDoctorViewController.swift */; };
 		8AB26D4C58D8545E237C17C4 /* Pods_Heath_LineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EE1F2417454C43445EDA9E /* Pods_Heath_LineTests.framework */; };
 		A5C52222A86301F46ED657F6 /* Pods_Heath_Line.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6646AEC040009266CC2CA971 /* Pods_Heath_Line.framework */; };
 		B078E171F0A0052D38509EC0 /* Pods_Heath_Line_Heath_LineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75650D52A5AA736C4614203 /* Pods_Heath_Line_Heath_LineUITests.framework */; };
@@ -63,6 +64,7 @@
 		5DD50EA928056B9C007FEFF1 /* Heath LineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heath LineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD50EAD28056B9C007FEFF1 /* Heath_LineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heath_LineUITests.swift; sourceTree = "<group>"; };
 		5DD50EAF28056B9C007FEFF1 /* Heath_LineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heath_LineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DEE297A2818890500CD57BB /* TalkToDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToDoctorViewController.swift; sourceTree = "<group>"; };
 		5F5FFBDCD7DDFFB340631D89 /* Pods-Heath Line.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heath Line.debug.xcconfig"; path = "Target Support Files/Pods-Heath Line/Pods-Heath Line.debug.xcconfig"; sourceTree = "<group>"; };
 		6646AEC040009266CC2CA971 /* Pods_Heath_Line.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heath_Line.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36FB4FA3B597F96BCA29645 /* Pods-Heath Line.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heath Line.release.xcconfig"; path = "Target Support Files/Pods-Heath Line/Pods-Heath Line.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5D4AD10C280F887E00CB6656 /* GoogleService-Info.plist */,
 				5D4AD112280F961900CB6656 /* CreateAccount.swift */,
 				5D4AD114280FD6CF00CB6656 /* LoginViewController.swift */,
+				5DEE297A2818890500CD57BB /* TalkToDoctorViewController.swift */,
 			);
 			path = "Heath Line";
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				5DD50E9128056B9C007FEFF1 /* ViewController.swift in Sources */,
 				5DD50E8D28056B9C007FEFF1 /* AppDelegate.swift in Sources */,
 				5D4AD113280F961900CB6656 /* CreateAccount.swift in Sources */,
+				5DEE297B2818890500CD57BB /* TalkToDoctorViewController.swift in Sources */,
 				5DD50E8F28056B9C007FEFF1 /* SceneDelegate.swift in Sources */,
 				C536F57F280E75D500CCFD12 /* HomeViewController.swift in Sources */,
 			);

@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
                     
                     if(password == passwordStored as? String){
                         print(document)
+                        self.emailInfo = userName ?? ""
                         self.performSegue(withIdentifier: "HomePage", sender: document)
                     }else{
                         let alert = UIAlertController(title: "Error", message: "Password is not correct", preferredStyle: UIAlertController.Style.alert)
@@ -67,10 +68,11 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        if(segue.identifier == "loginToMain"){
-            let destinationVC = (segue.destination as! UINavigationController).topViewController as! HomeViewController
+        print("page")
+        if(segue.identifier == "HomePage"){
+            let destinationVC = segue.destination as! HomeViewController
             destinationVC.email = emailInfo
+            print(emailInfo)
         }
         
     }

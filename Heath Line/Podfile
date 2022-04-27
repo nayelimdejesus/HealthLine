@@ -16,6 +16,8 @@ target 'Heath Line' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
+  pod 'DropDown', :git=> 'https://github.com/AssistoLab/DropDown.git'
+
   target 'Heath LineTests' do
     inherit! :search_paths
     # Pods for testing

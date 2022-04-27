@@ -344,6 +344,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - DropDown (2.3.13)
   - Firebase (8.14.0):
     - Firebase/Core (= 8.14.0)
   - Firebase/Analytics (8.14.0):
@@ -504,6 +505,7 @@ PODS:
   - PromisesObjC (2.1.0)
 
 DEPENDENCIES:
+  - DropDown (from `https://github.com/AssistoLab/DropDown.git`)
   - Firebase
   - Firebase/Analytics
   - Firebase/AnalyticsWithoutAdIdSupport
@@ -535,9 +537,19 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
 
+EXTERNAL SOURCES:
+  DropDown:
+    :git: https://github.com/AssistoLab/DropDown.git
+
+CHECKOUT OPTIONS:
+  DropDown:
+    :commit: 2ab6f6ce19f0117d1a76ea043ef8f57722c65d16
+    :git: https://github.com/AssistoLab/DropDown.git
+
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  DropDown: bf260fd688978138019ad7d94f63a2362dad85ba
   Firebase: 7e8fe528c161b9271d365217a74c16aaf834578e
   FirebaseAnalytics: 2fc3876e2eb347673ad2f35e249ae7b15d6c88f5
   FirebaseAuth: c5fde343630090253d3af7e2d35697b414b40202
@@ -556,6 +568,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
 
-PODFILE CHECKSUM: c1c997a35fa5809220f8e3708060bd830f2fbedf
+PODFILE CHECKSUM: 4236267fb418f48ffb5e27e666c77e1130b78954
 
 COCOAPODS: 1.11.2

@@ -3,7 +3,7 @@
 "2Nd-yb-wUv.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Welcome !"; ObjectID = "6AM-oZ-cYw"; */
-"6AM-oZ-cYw.text" = "Welcome !";
+"6AM-oZ-cYw.text" = "Welcome,";
 
 /* Class = "UILabel"; text = "Affordable Healthcare"; ObjectID = "AtI-kl-AqQ"; */
 "AtI-kl-AqQ.text" = "Affordable Healthcare";
@@ -18,13 +18,13 @@
 "P0z-ir-Wvc.text" = "Healthline";
 
 /* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "YyM-Dy-BrO"; */
-"YyM-Dy-BrO.configuration.title" = "Sign In";
+"YyM-Dy-BrO.configuration.title" = "Log In";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YyM-Dy-BrO"; */
 "YyM-Dy-BrO.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Create Account"; ObjectID = "hW2-w4-dx9"; */
-"hW2-w4-dx9.configuration.title" = "Create Account";
+"hW2-w4-dx9.configuration.title" = "Sign-Up";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hW2-w4-dx9"; */
 "hW2-w4-dx9.normalTitle" = "Button";

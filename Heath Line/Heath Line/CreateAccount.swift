@@ -22,7 +22,7 @@ class CreateAccount: UIViewController {
         let LastName = lastName.text?.trimmingCharacters(in: .whitespaces)
         let Username = username.text?.trimmingCharacters(in: .whitespaces)
         let Password = password.text?.trimmingCharacters(in: .whitespaces)
-        print(Password)
+        
         if(Username != "" && Password != ""){
             let docRef = db.collection("Users").document(Username!)
             
