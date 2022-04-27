@@ -12,7 +12,7 @@ import Firebase
 class TalkToDoctorViewController: UIViewController {
     var email:String = ""
     let db = Firestore.firestore()
-    let dropDown = DropDown()
+//    let dropDown = DropDown()
 
     @IBAction func returnHome(_ sender: Any) {
         let docRef = db.collection("Users").document(email)
@@ -28,9 +28,9 @@ class TalkToDoctorViewController: UIViewController {
         
     }
     
-    @IBAction func selectProfession(_ sender: Any) {
-        dropDown.dataSource = [""]
-    }
+//    @IBAction func selectProfession(_ sender: Any) {
+//        dropDown.dataSource = [""]
+//    }
     
     //
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
