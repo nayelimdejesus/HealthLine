@@ -10,6 +10,8 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBAction func myInformation(_ sender: Any) {
+    }
     var email:String = ""
     let db = Firestore.firestore()
     @IBOutlet weak var userName: UILabel!
