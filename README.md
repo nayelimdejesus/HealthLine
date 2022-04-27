@@ -23,5 +23,4 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/0W9Py7BQSC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Week 2 - App Update - GIF
-
-<iframe src="https://giphy.com/embed/gnrrWcH6GrWimTs4j8" width="224" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gnrrWcH6GrWimTs4j8">via GIPHY</a></p>
+<img src="https://giphy.com/embed/gnrrWcH6GrWimTs4j8" title='Video Walkthrough' width='' alt='Video Walkthrough' />
