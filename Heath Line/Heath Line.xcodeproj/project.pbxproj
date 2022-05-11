@@ -24,6 +24,7 @@
 		A5C52222A86301F46ED657F6 /* Pods_Heath_Line.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6646AEC040009266CC2CA971 /* Pods_Heath_Line.framework */; };
 		B078E171F0A0052D38509EC0 /* Pods_Heath_Line_Heath_LineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75650D52A5AA736C4614203 /* Pods_Heath_Line_Heath_LineUITests.framework */; };
 		C536F57F280E75D500CCFD12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536F57E280E75D500CCFD12 /* HomeViewController.swift */; };
+		C59CEC242819388C00FDC87E /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CEC232819388C00FDC87E /* UserInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		A75650D52A5AA736C4614203 /* Pods_Heath_Line_Heath_LineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heath_Line_Heath_LineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE1F2417454C43445EDA9E /* Pods_Heath_LineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heath_LineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536F57E280E75D500CCFD12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C59CEC232819388C00FDC87E /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		D33E5C3B7AC05BA4699E53F8 /* Pods-Heath LineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heath LineTests.release.xcconfig"; path = "Target Support Files/Pods-Heath LineTests/Pods-Heath LineTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				5D4AD112280F961900CB6656 /* CreateAccount.swift */,
 				5D4AD114280FD6CF00CB6656 /* LoginViewController.swift */,
 				5DEE297A2818890500CD57BB /* TalkToDoctorViewController.swift */,
+				C59CEC232819388C00FDC87E /* UserInformation.swift */,
 			);
 			path = "Heath Line";
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				5DD50E8D28056B9C007FEFF1 /* AppDelegate.swift in Sources */,
 				5D4AD113280F961900CB6656 /* CreateAccount.swift in Sources */,
 				5DEE297B2818890500CD57BB /* TalkToDoctorViewController.swift in Sources */,
+				C59CEC242819388C00FDC87E /* UserInformation.swift in Sources */,
 				5DD50E8F28056B9C007FEFF1 /* SceneDelegate.swift in Sources */,
 				C536F57F280E75D500CCFD12 /* HomeViewController.swift in Sources */,
 			);
