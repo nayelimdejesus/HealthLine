@@ -10,6 +10,8 @@ Create a mobile application that assists users to find reputable doctors and spe
 - [x] Shortcuts
 - [ ] Connection via Zoom
 - [ ] Search care options
+- [X] My information Page
+- [ ] Affordable Clinics
 
 <!-- The following **bonus** features are implemented:
 
@@ -25,4 +27,4 @@ Here's a walkthrough of implemented user stories:
 Week 2 - App Update - GIF
 
 
-<img src="https://media.giphy.com/media/gnrrWcH6GrWimTs4j8/giphy.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="http://g.recordit.co/dvw9g50XT7.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
