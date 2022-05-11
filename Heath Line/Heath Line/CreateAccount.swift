@@ -15,6 +15,8 @@ class CreateAccount: UIViewController {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var insurance: UITextField!
+    @IBOutlet weak var zip: UITextField!
     let db = Firestore.firestore()
     var userinfo: String = ""
     @IBAction func signUp(_ sender: Any) {
@@ -22,6 +24,8 @@ class CreateAccount: UIViewController {
         let LastName = lastName.text?.trimmingCharacters(in: .whitespaces)
         let Username = username.text?.trimmingCharacters(in: .whitespaces)
         let Password = password.text?.trimmingCharacters(in: .whitespaces)
+        let insuranceComp = insurance.text?.trimmingCharacters(in:.whitespaces)
+        let zipCodeInfo = zip.text?.trimmingCharacters(in:.whitespaces)
         
         if(Username != "" && Password != ""){
             let docRef = db.collection("Users").document(Username!)
@@ -35,7 +39,9 @@ class CreateAccount: UIViewController {
                     self.db.collection("Users").document(self.username.text!).setData([
                         "first_name": FirstName!,
                         "last_name": LastName!,
-                        "password": Password!
+                        "password": Password!,
+                        "insurance": insuranceComp!,
+                        "zipcode": zipCodeInfo!
                     ]){ (err) in
                         if let err = err {
                             print("Error writing document: \(err)")
