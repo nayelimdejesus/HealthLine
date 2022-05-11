@@ -258,6 +258,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="65"/>
                                     <color key="baseForegroundColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onAffordable:" destination="mUY-MM-U2X" eventType="touchUpInside" id="9tb-76-g4S"/>
+                                    <segue destination="NzA-eX-SXc" kind="presentation" identifier="sendAffordable" id="hbA-5R-iTc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Access my Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihL-Lg-KCF">
                                 <rect key="frame" x="20" y="405" width="168" height="21"/>
@@ -268,13 +272,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Talk to a Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Che-ZQ-Taz">
                                 <rect key="frame" x="250" y="405" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Affordable Healthcare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtI-kl-AqQ">
-                                <rect key="frame" x="20" y="635" width="167" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -313,6 +310,13 @@
                                 <color key="textColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Affordable Clinics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtI-kl-AqQ">
+                                <rect key="frame" x="37" y="634" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lI-j0-sgN"/>
                         <color key="backgroundColor" red="0.0" green="0.1240021882" blue="0.24042773009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -326,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rK-Y3-CA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="1682"/>
+            <point key="canvasLocation" x="-559.4202898550725" y="1681.4732142857142"/>
         </scene>
         <!--User Information-->
         <scene sceneID="LfR-6F-9mE">
@@ -480,24 +484,37 @@
             </objects>
             <point key="canvasLocation" x="-133.33333333333334" y="2406.6964285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Affordable View Controller-->
         <scene sceneID="iNe-m2-2Vj">
             <objects>
-                <viewController id="NzA-eX-SXc" sceneMemberID="viewController">
+                <viewController id="NzA-eX-SXc" customClass="AffordableViewController" customModule="Heath_Line" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rue-eK-DbL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-uF-sGa">
-                                <rect key="frame" x="0.0" y="178" width="414" height="44"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Clinics" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-uF-sGa">
+                                <rect key="frame" x="0.0" y="131" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Affordable Healthcare" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-io-UhR">
-                                <rect key="frame" x="7" y="77" width="407" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HE9-tI-6TB">
+                                <rect key="frame" x="0.0" y="10" width="54" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="returnHome:" destination="NzA-eX-SXc" eventType="touchUpInside" id="xm1-BU-d0g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Affordable Clinics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-io-UhR">
+                                <rect key="frame" x="20" y="44" width="374" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="36"/>
                                 <color key="textColor" red="0.57567616870000005" green="0.87254063120000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -505,15 +522,17 @@
                         <viewLayoutGuide key="safeArea" id="yat-g6-gjc"/>
                         <color key="backgroundColor" red="0.0" green="0.1240021882" blue="0.24042773009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="mUY-MM-U2X" kind="presentation" identifier="returnHome" id="yHN-Au-62H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nY3-Dh-iiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689.8550724637685" y="140.625"/>
+            <point key="canvasLocation" x="-1459.4202898550725" y="1680.8035714285713"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="p7b-N2-8LA"/>
-        <segue reference="SAh-sx-DNv"/>
+        <segue reference="yHN-Au-62H"/>
         <segue reference="P7i-Zb-urO"/>
     </inferredMetricsTieBreakers>
     <resources>

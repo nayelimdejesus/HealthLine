@@ -23,6 +23,15 @@ class HomeViewController: UIViewController {
         }
     }
     
+    @IBAction func onAffordable(_ sender: Any) {
+        let docRef = db.collection("Users").document(email)
+        docRef.getDocument{ [self](document, error) in
+            if let document = document, document.exists {
+                self.performSegue(withIdentifier: "sendAffordable", sender: document)
+            }
+        }
+    }
+    
     @IBAction func onInformation(_ sender: Any) {
         let docRef = db.collection("Users").document(email)
         docRef.getDocument{ [self](document, error) in
@@ -61,6 +70,10 @@ class HomeViewController: UIViewController {
         }
         else if(segue.identifier == "myInformationBtn"){
             let destinationVC = segue.destination as! UserInformation
+            destinationVC.email = email
+        }
+        else if(segue.identifier == "sendAffordable"){
+            let destinationVC = segue.destination as! AffordableViewController
             destinationVC.email = email
         }
     }
