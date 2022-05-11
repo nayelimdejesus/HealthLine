@@ -5,9 +5,9 @@ Create a mobile application that assists users to find reputable doctors and spe
 
 ## User Stories
 
-- [ ] Login
-- [ ] Landing Page
-- [ ] Shortcuts
+- [x] Login
+- [x] Landing Page
+- [x] Shortcuts
 - [ ] Connection via Zoom
 - [ ] Search care options
 
@@ -21,3 +21,8 @@ Create a mobile application that assists users to find reputable doctors and spe
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/0W9Py7BQSC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Week 2 - App Update - GIF
+
+
+<img src="https://media.giphy.com/media/gnrrWcH6GrWimTs4j8/giphy.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
