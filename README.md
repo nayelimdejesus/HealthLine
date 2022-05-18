@@ -31,5 +31,5 @@ Week 4 - App Update - GIF
  
 <img src="http://g.recordit.co/dvw9g50XT7.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Final App 
+## Final App 📱
 <img src="https://media.giphy.com/media/vKAcqnjSPIVatbRgvS/giphy.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
