@@ -10,69 +10,35 @@ import Firebase
 import Foundation
 
 class TalkToDoctorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var count = 1
     var email:String = ""
     let db = Firestore.firestore()
     //    let dropDown = DropDown()
     var id = 0
+    var index = 0
     var name:String = ""
-    var doctorDict:[String:Any] =  [
-            "name": "Dr. Reema Menezes, MD",
-            "address": "9460 N Name Uno Ste 110",
-            "city": "Gilroy",
-            "zipcode": "95020",
-            "profession": "Doctor",
-            "state": "Ca",
-            "id": "1"]
-    var doctorDic2:[String:Any] = [
-        "name": "Dr. Ray, MD",
-        "address": "9460 Forest Ste 110",
-        "city": "Gilroy",
-        "zipcode": "95020",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "2"]
-    
-    var doctorDic3:[String:Any] = [
-        "name": "Dr. May, MD",
-        "address": "120 Star Street Uno Ste 110",
-        "city": "Gilroy",
-        "zipcode": "95020",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "3"]
-    var doctorDic4:[String:Any] = [
-        "name": "Dr. Reema Menezes, MD",
-        "address": "9460 N Name Uno Ste 110",
-        "city": "Gilroy",
-        "zipcode": "95020",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "4"]
-    var doctorDic5:[String:Any] = [
-        "name": "Dr. Nancy, MD",
-        "address": "9460 T0 Blvd",
-        "city": "Gilroy",
-        "zipcode": "95020",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "1"]
-    var doctorDic6:[String:Any] = [
-        "name": "Dr. Nancy, MD",
-        "address": "9460 T0 Blvd",
-        "city": "Morgan Hill",
-        "zipcode": "95012",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "1"]
-    var doctorDic7:[String:Any] = [
-        "name": "Dr. Nancy, MD",
-        "address": "9460 T0 Blvd",
-        "city": "San Jose",
-        "zipcode": "95223",
-        "profession": "Doctor",
-        "state": "Ca",
-        "id": "1"]
+    var interestingNumbers = [1: ["name":"Dr. Reema Menezes, MD",
+                                    "direction":"9460 N Name Uno Ste 110 Gilroy 95020 Ca",
+                                    "zipcode": "95020"],
+                              2: ["name":"Dr. Ray, MD",
+                                    "direction":"9460 Forest Ste 110 Gilroy 95020 Ca",
+                                    "zipcode": "95020"],
+                              3:["name":"Dr. May, MD",
+                                   "direction":"120 Star Street Uno Ste 110 Gilroy 95020 Ca",
+                                   "zipcode": "95020"],
+                              4:["name":"Dr. Reema Menezes, MD",
+                                   "direction":"9460 N Name Uno Ste 110 Gilroy 95020 Ca",
+                                   "zipcode": "95020"],
+                              5:["name":"Dr. Nancy, MD",
+                                   "direction":"9460 T0 Blvd Gilroy 95020 Ca",
+                                   "zipcode": "95020"],
+                              6:["name":"Dr. Nancy, MD",
+                                   "direction":"9460 T0 Blvd Morgan Hill 95012 Ca",
+                                   "zipcode": "95012"],
+                              7: ["name":"Dr. Nancy, MD",
+                                    "direction":"9460 T0 Blvd San Jose 95223 Ca",
+                                    "zipcode": "95223"]]
+
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var zipCodeLabel: UITextField!
     @IBAction func returnHome(_ sender: Any) {
@@ -90,66 +56,84 @@ class TalkToDoctorViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         print(email)
         //import PlaygroundSupport
-        print(doctorDict["zipcode"])
         let docRef = db.collection("Users").document(email)
         docRef.getDocument{ [self](document, error) in
             if let document = document, document.exists {
                 let data = document.data()
                 zipCodeLabel.text = data!["zipcode"] as? String
             }
+
         }
-        let url = URL(string: "https://627ecd1eb75a25d3f3bd3d78.mockapi.io/doctors/1")!
-        let request = URLRequest(url: url)
+//        let url = URL(string: "https://627ecd1eb75a25d3f3bd3d78.mockapi.io/doctors/1")!
+//        let request = URLRequest(url: url)
+//
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//          if let response = response {
+//              print(response)
+//
+//            if let data = data, let body = String(data: data, encoding: .utf8) {
+//                print("pass")
+//            }
+//          } else {
+//            print(error ?? "Unknown error")
+//          }
+//        }
 
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          if let response = response {
-              print(response)
-
-            if let data = data, let body = String(data: data, encoding: .utf8) {
-                print("pass")
-            }
-          } else {
-            print(error ?? "Unknown error")
-          }
-        }
-
-        task.resume()
+//        task.resume()
         tableview.delegate = self
         tableview.dataSource = self
     }
     
     @IBAction func searchDoctor(_ sender: Any) {
-        self.tableview.reloadData()
+//        for key in interestingNumbers.keys {
+//            interestingNumbers[key]?.sort(by: >)
+//        }
+        index = 0
+        for i in 1...7{
+            if(interestingNumbers[i]!["zipcode"]! == zipCodeLabel.text){
+               index += 1
+            }
+        }
+        print("inex foun")
+        print(index)
+        i(x: "pass")
+        //self.tableview.reloadData()
     }
     
+    func i(x: String){
+        self.tableview.reloadData()
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return doctorDict.count
+        return index
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DoctorCell") as! DoctorCell
-        print(doctorDict["zipcode"])
-        if(doctorDict["zipcode"] as! String == zipCodeLabel.text){
-            cell.doctorName.text = doctorDict["name"] as! String
-            let x:String = doctorDict["address"] as! String
-            let b :String = doctorDict["city"] as! String
-            let y : String = doctorDict["state"] as! String
-            let a : String = doctorDict["zipcode"] as! String
-            cell.doctorAddress.text = x + " " + b + " " + y + " " + a
-        }else if(doctorDic6["zipcode"] as! String == zipCodeLabel.text){
-            cell.doctorName.text = doctorDict["name"] as! String
-            let x:String = doctorDic6["address"] as! String
-            let b :String = doctorDic6["city"] as! String
-            let y : String = doctorDic6["state"] as! String
-            let a : String = doctorDic6["zipcode"] as! String
-            cell.doctorAddress.text = x + " " + b + " " + y + " " + a
-        }else if(doctorDic7["zipcode"] as! String == zipCodeLabel.text){
-            cell.doctorName.text = doctorDict["name"] as! String
-            let x:String = doctorDic7["address"] as! String
-            let b :String = doctorDic7["city"] as! String
-            let y : String = doctorDic7["state"] as! String
-            let a : String = doctorDic7["zipcode"] as! String
-            cell.doctorAddress.text = x + " " + b + " " + y + " " + a
+        print("passssss")
+        print(count)
+        print(zipCodeLabel.text)
+        if(index > 1){
+            if(interestingNumbers[count]!["zipcode"]! == zipCodeLabel.text){
+                print(interestingNumbers[count]?["direction"]!)
+                cell.doctorName.text = interestingNumbers[count]?["name"] as! String
+                cell.doctorAddress.text = interestingNumbers[count]?["direction"]!
+                count += 1
+            }
+        }else{
+            for i in 1...7{
+                print("hhhh")
+                print(interestingNumbers[i]?["direction"]!)
+                if(interestingNumbers[i]!["zipcode"]! == zipCodeLabel.text){
+                    print(interestingNumbers[i]?["direction"]!)
+                    cell.doctorName.text = interestingNumbers[i]?["name"] as! String
+                    cell.doctorAddress.text = interestingNumbers[i]?["direction"]!
+                }
+            }
+        }
+        if(count == 8){
+            count = 1
+        
         }
         return cell
     }
