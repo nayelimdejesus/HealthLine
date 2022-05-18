@@ -119,6 +119,8 @@ class TalkToDoctorViewController: UIViewController, UITableViewDataSource, UITab
                 cell.doctorName.text = interestingNumbers[count]?["name"] as! String
                 cell.doctorAddress.text = interestingNumbers[count]?["direction"]!
                 count += 1
+            }else{
+                count += 1
             }
         }else{
             for i in 1...7{
