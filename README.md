@@ -8,7 +8,7 @@ Create a mobile application that assists users to find reputable doctors and spe
 - [x] Login
 - [x] Landing Page
 - [x] Shortcuts
-- [ ] Connection via Zoom
+- [x] Connection via Zoom
 - [ ] Search care options
 - [X] My information Page
 - [ ] Affordable Clinics
@@ -30,3 +30,6 @@ Week 2 - App Update - GIF
 Week 4 - App Update - GIF
  
 <img src="http://g.recordit.co/dvw9g50XT7.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Final App 
+<img src="https://media.giphy.com/media/vKAcqnjSPIVatbRgvS/giphy.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
